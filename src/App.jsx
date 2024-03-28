@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      A blog with appwrite
+      <h1 className='text-3xl'>Halloooo</h1>
     </>
   )
 }
