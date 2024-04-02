@@ -9,7 +9,7 @@ import Button from "./Button";
 import Login from "./Login";
 import Signup from "./Signup";
 import Input from "./Input";
-import PostCard from "./PostCard";
+import Postcard from "./Postcard";
 
 export {
   Header,
@@ -23,5 +23,5 @@ export {
   Login,
   Signup,
   Input,
-  PostCard,
+  Postcard,
 }
