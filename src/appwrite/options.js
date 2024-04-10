@@ -81,21 +81,21 @@ export class Service{
     return null;
   }
 
-  async listPosts(){
-    try {
-      return await this.databases.listDocumnets(
-        config.appwriteDatabaseID,
-        config.appwriteCollectionID,
-        slug
-      )
-    } catch (error) {
-      console.log("Appwrite Service :: listPosts :: error : ",error);
-    }
+  // async listPosts(){
+  //   try {
+  //     return await this.databases.listDocumnets(
+  //       config.appwriteDatabaseID,
+  //       config.appwriteCollectionID,
+  //       slug
+  //     )
+  //   } catch (error) {
+  //     console.log("Appwrite Service :: listPosts :: error : ",error);
+  //   }
 
-    return null;
-  }
+  //   return null;
+  // }
 
-  async listActivePosts(queries = [ Query.equal("status", "active")]) {
+  async listPosts(queries = [ Query.equal("status", "active")]) {
     try {
       return await this.databases.listDocumnets(
         config.appwriteDatabaseID,
@@ -103,7 +103,7 @@ export class Service{
         queries
       )
     } catch (error) {
-      console.log("Appwrite Service :: listActivePosts :: error : ",error);
+      console.log("Appwrite Service :: listPosts :: error : ",error);
     }
 
     return null;
